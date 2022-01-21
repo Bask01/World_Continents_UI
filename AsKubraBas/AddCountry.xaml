@@ -1,0 +1,29 @@
+﻿<Window x:Class="AsKubraBas.AddCountry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsKubraBas"
+        mc:Ignorable="d"
+        Title="AddCountry" Height="461" Width="775">
+    <Canvas Margin="0,0,10,-6">
+        <ComboBox x:Name="cmbContinents" Canvas.Left="222" Canvas.Top="83" Width="230" Height="35"/>
+        <TextBox x:Name="txtCountryname" Canvas.Left="222" Canvas.Top="152" TextWrapping="Wrap" Width="230" Height="35" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtLanguage" Canvas.Left="220" Canvas.Top="213" TextWrapping="Wrap" Width="230" Height="35" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtCurrency" Canvas.Left="220" Canvas.Top="267" TextWrapping="Wrap" Width="230" Height="35" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Country Name" Canvas.Left="62" Canvas.Top="150" Height="49" Width="230" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Language" Canvas.Left="62" Canvas.Top="213" Height="35" Width="136" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Currency" Canvas.Left="62" Canvas.Top="267" Height="29" Width="130" FontSize="14" FontWeight="Bold"/>
+        <Button Content="Insert Country" Canvas.Left="64" Canvas.Top="358" Height="47" Width="235" FontSize="14" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="Exit" Canvas.Left="329" Canvas.Top="358" Height="47" Width="196" FontSize="14" FontWeight="Bold" Click="Button_Click_1"/>
+        <Label Content="Select a Continent" Canvas.Left="62" Canvas.Top="87" Height="35" Width="169" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblValid" Content="" Canvas.Left="106" Canvas.Top="301" Height="52" Width="361" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Fill Up the Form to Add a Country" Canvas.Left="130" Canvas.Top="16" Height="46" Width="306" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="lblValid1" Content="" Canvas.Left="475" Canvas.Top="90" Height="28" Width="252" FontSize="14" FontWeight="Bold" Foreground="#FFD40909"/>
+        <Label Content="*" Canvas.Left="456" Canvas.Top="82" Height="29" Width="35" FontSize="20" FontWeight="Bold" FontStyle="Italic" AutomationProperties.IsRequiredForForm="True" Foreground="#FFB70C0C"/>
+        <Label x:Name="lblValid2" Content="" Canvas.Left="479" Canvas.Top="160" Height="28" Width="252" FontSize="14" FontWeight="Bold" Foreground="#FFD40909"/>
+        <Label Content="*" Canvas.Left="458" Canvas.Top="156" Height="29" Width="35" FontSize="20" FontWeight="Bold" FontStyle="Italic" AutomationProperties.IsRequiredForForm="True" Foreground="#FFB70C0C"/>
+
+
+    </Canvas>
+</Window>

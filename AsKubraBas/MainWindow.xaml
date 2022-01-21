@@ -1,0 +1,28 @@
+﻿<Window x:Class="AsKubraBas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsKubraBas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="419" Width="770">
+    <Canvas Margin="41,10,10,32">
+        <ComboBox x:Name="cmbContinents" Canvas.Left="103" Canvas.Top="36" Width="153" Height="23" SelectionChanged="cmbContinents_SelectionChanged"/>
+        <ListBox x:Name="lstCountries" Height="153" Width="241" Canvas.Top="105" Canvas.Left="13" SelectionChanged="lstCountries_SelectionChanged"/>
+        <Label x:Name="lbl_Language" Content="" Canvas.Left="163" Canvas.Top="270" Height="29" Width="144" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Currency:" Canvas.Top="298" Height="29" Width="131" FontWeight="Bold" Canvas.Left="98"/>
+        <Label Content="Most Common Language:" Canvas.Top="272" FontWeight="Bold" Width="168" Canvas.Left="9"/>
+        <Label x:Name="lbl_Currency" Content="" Canvas.Left="162" Canvas.Top="298" Height="25" Width="144" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Continents" Canvas.Left="5" Canvas.Top="30" Height="33" Width="97" FontSize="14" FontWeight="Bold"/>
+        <DataGrid x:Name="dtgCities" Height="170" Width="380" Canvas.Left="288" Canvas.Top="66" FontWeight="Bold"/>
+        <Button x:Name="btnContinent" Content="Add Continent" Canvas.Left="305" Canvas.Top="255" Height="43" Width="119" Click="btnContinent_Click" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnCountry" Content="Add Country" Canvas.Left="442" Canvas.Top="255" Click="btnCountry_Click" Height="43" Width="100" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnCity" Content="Add City" Canvas.Left="561" Canvas.Top="255" Click="btnCity_Click" Height="43" Width="70" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Countries Of The Selected Continent:" Canvas.Left="5" Canvas.Top="68" Width="302" FontSize="14" FontWeight="Bold"/>
+        <Label Content="City List Of The Selected Country:" Canvas.Left="309" Canvas.Top="32" Width="305" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnExit" Content="Exit" Canvas.Left="613" Canvas.Top="312" Height="34" Width="45" FontSize="14" FontWeight="Bold" Click="btnExit_Click"/>
+
+
+
+    </Canvas>
+</Window>
